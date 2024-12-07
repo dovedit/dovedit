@@ -70,6 +70,6 @@
   }
 
   a {
-    @apply text-primary underline;
+    @apply text-primary underline font-bold;
   }
 }
