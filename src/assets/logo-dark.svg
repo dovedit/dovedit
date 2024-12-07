@@ -1,0 +1,16 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <title>Dovedit</title>
+ <!-- Base D -->
+
+ <!-- Strokes that go through -->
+ <!-- White overlay strokes -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_7" height="1000" width="1000" y="0" x="0" stroke-width="0" stroke="#ffffff" fill="#000000"/>
+  <path d="m216.08338,125.3039l300.98765,0a376.23457,376.23457 0 0 1 0,752.46913l-300.98765,0c0,-250.82304 0,-501.64609 0,-752.46913z" fill="#ffffff" id="svg_1"/>
+  <path fill="#1B3C6B" d="m106.69446,171.99997l457.91855,457.91855" stroke-width="64" stroke-linecap="round" id="svg_2" stroke="#ffffff"/>
+  <path fill="#1B3C6B" d="m106.69446,291.99999l457.91855,457.91855" stroke-width="64" stroke-linecap="round" id="svg_3" stroke="#ffffff"/>
+  <path fill="none" d="m127.93428,162.20847l429.29864,429.29864" stroke-width="64" stroke-linecap="round" id="svg_4" stroke="#000000"/>
+  <path stroke="#000000" fill="none" d="m127.93428,281.99999l429.29864,429.29864" stroke-width="64" stroke-linecap="round" id="svg_5"/>
+ </g>
+</svg>

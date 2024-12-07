@@ -1,16 +1,78 @@
 ---
+import Layout from "@/layouts/base.astro";
+import { Image } from "astro:assets";
 
 ---
+<Layout title="Dovedit" class="flex flex-row" navbarProps={{ hide: true }}>
+	<Image
+		src={import("@/assets/plants.png")}
+		alt="Plants"
+		height="1024"
+		class="h-svh object-cover object-right absolute inset-0 -z-10 max-w-[30vw] md:max-w-[40vw] dark:invert"
+	/>
+	<h1 style="writing-mode: tb" class="text-[15vh] md:text-[25vh] text-right align-bottom leading-none w-[30vw] font-black rotate-180 mix-blend-difference invert dark:invert-0">Dovedit</h1>
+	<div class="flex flex-row pl-0 p-4">
+		<div class="max-w-xl flex flex-col gap-8">
+			<div>
+				<h2 class="text-4xl font-bold">
+					Care e problema?
+				</h2>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+				<p>
+					Alegerile prezidentiale din 2024 au aratat cat de usor suntem de influentat
+					ca popor, bazandu-ne pe informatie de pe retelele sociale precum TikTok,
+					Instagram si Facebook. Informatie care nu este verificata si de multe
+					ori este falsa intentionat sau neintentionat. <b>Romanii nu se informeaza
+					corespunzator.</b>
+				</p>
+			</div>
+
+
+			<div>
+				<h2 class="text-4xl font-bold">
+					De ce nu se informeaza romanii?
+				</h2>
+
+				<p>
+					Canalele de informare din Romania sunt sub nivelul
+					de calitate standard international. Fiind pline de informatie inutila
+					si haotica doar pentru a atrage vizitatori cum ar fi: showbiz,
+					paparazzi, interpretari care instiga furie, clickbait si alte
+					tactici murdare. Iar oamenii de rand folosesc social media pentru ca,
+					au o calitate mai inalta decat sursele de informatie traditionale din Romania.
+				</p>
+			</div>
+
+
+			<div>
+				<h2 class="text-4xl font-bold">
+					Care e solutia?
+				</h2>
+
+				<p>
+					Dovedit nu este aplicatia care va inlocui toate sursele de informatie,
+					este o initiativa care va ajuta ca toate canalele de informatie sa urmeze
+					un standard mai inalt de calitate. Solutia este sa ridicam standardul
+					de calitate al informatiei si al surselor de informatie, prin
+					verificari, design, accesibilitate, securitate si multe alte aspecte
+					pe care Dovedit le implementeaza.
+				</p>
+			</div>
+
+
+			<div>
+				<h2 class="text-4xl font-bold">
+					Cum o vom face?
+				</h2>
+
+				<p>
+					Dovedit este platforma dedicata informatiei. Aceasta
+					este sustinuta in intregime de comunitate. Aceasta initiativa
+					este solutia care pregateste un viitor mai bun pentru
+					informatia din Romania. Daca vrei sa vezi mai multe
+					detalii, <a href="/whitepaper">citeste whitepaper-ul Dovedit</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+</Layout>

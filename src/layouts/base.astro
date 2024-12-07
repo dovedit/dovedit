@@ -1,0 +1,34 @@
+---
+import "@/styles/globals.css";
+import "@fontsource/geist-sans"
+import { Navbar, type NavbarProps } from "@/components/navbar";
+import { mdClassName } from "@/lib/markdown";
+import { cn } from "@/lib/utils";
+
+interface Props {
+	title: string;
+	class?: string;
+	navbarProps?: NavbarProps;
+	frontmatter?: Omit<Props, "frontmatter">
+}
+
+const props = Astro.props.frontmatter ?? Astro.props;
+const isMarkdown = !!Astro.props.frontmatter;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{props.title}</title>
+		<slot name="head"/>
+	</head>
+	<body>
+		<Navbar {...props.navbarProps}/>
+		<main class={cn(props.class, isMarkdown ? `${mdClassName} !container my-4` : "")}>
+			<slot/>
+		</main>
+	</body>
+</html>
