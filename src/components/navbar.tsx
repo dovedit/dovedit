@@ -13,7 +13,7 @@ export function Navbar(props: NavbarProps) {
 
 	return (
 		<nav
-			className="flex flex-row h-16 p-2 container"
+			className="flex flex-row h-16 p-4 container"
 		>
 			<a href="/">
 				<Logo

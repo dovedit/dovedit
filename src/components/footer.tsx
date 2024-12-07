@@ -40,6 +40,11 @@ export function Footer(props: FooterProps) {
 					<h2 className="text-muted-foreground">LEGAL</h2>
 					<a href="/licenta">Licenta</a>
 				</div>
+
+				<div className="flex flex-col">
+					<h2 className="text-muted-foreground">DESPRE</h2>
+					<a href="/whitepaper">Whitepaper</a>
+				</div>
 			</div>
 		</footer>
 	)

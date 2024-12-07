@@ -3,46 +3,84 @@ layout: "@/layouts/base.astro"
 title: Whitepaper
 ---
 
+
 # Whitepaper
 
-Acest document serveste ca whitepaper pentru Dovedit care specifica viziunea, viitorul si detailiile despre Dovedit,
-platforma romaneasca universala pentru informatie.
+Acest document servește drept whitepaper pentru Dovedit, specificând viziunea,
+direcțiile viitoare și detaliile de bază ale platformei românești universale pentru informație.
 
-Dovedit este o platforma moderna care se bazeaza pe mai multe principii, si foloseste aceste principii ca baze
-fundamentale in guvernare si construire. Bazele fundamentale ale Dovedit sunt:
-* Transparenta
-* Confidentialitate
-* Eficienta
+## Fundamentalele Dovedit
+Dovedit este o platformă modernă, construită pe o serie de principii fundamentale
+care ghidează guvernarea și dezvoltarea sa. Acestea sunt:
+
+* Transparență
+* Confidențialitate
+* Eficiență
 * Accesibilitate
 * Neutralitate
 * Dreptate
+* Transparență
 
-## Transparenta
-Dovedit promite o platforma cu o transparenta deosebita. De la codul sursa, comunitate, documentatie pana la finante,
-articole si procese. Facem aceasta transparenta posibila pentru a asigura increderea si pentru a pune presiune pe a
-face ceea ce trebuie. Tot ce se construieste in jurul la Dovedit va fi public prin publicarea progresului, planurilor
-si a codului, distribuirea resurselor precum si multe alte aspecte si mecanisme.
+Dovedit promite o transparență excepțională în toate aspectele: de la codul sursă și
+comunitate, la documentație, finanțe, articole și procese. Transparența este piatra de
+temelie pentru a câștiga încrederea utilizatorilor și a asigura responsabilitatea în
+luarea deciziilor. Tot ce construim în jurul Dovedit este public: publicăm progresul,
+planurile și codul sursă, distribuim resursele și detaliem procesele, astfel încât
+utilizatorii să fie mereu informați și implicați.
 
-## Confidentialitate
-Confidentialitatea nu este un lux, ci un drept fundamental. Iar acest lucru ar trebui sa persiste si in spatiul online.
-Dovedit foloseste analitica strict pentru a imbunatati platforma, aceste date sunt colectionate anonim si pot fi dezactivate
-in orice moment. Aceste date nu sunt legate de catre contul personal si nu pot fi folosite pentru a tinti un anumit individ.
-Avem grija sa nu colectionam date sensibile cum ar fi varsta, etnie, religie, orientare politica, locatie si altele. Aceasta
-grija exista si in selectarea tertelor cu care colaboram pentru a iti respecta confidentialitatea in intregime cat timp
-esti in experienta Dovedit.
+### Confidențialitate
+Confidențialitatea este un drept fundamental, nu un lux. Dovedit respectă acest drept,
+oferind o experiență sigură și privată online. Analizele noastre sunt utilizate strict
+pentru îmbunătățirea platformei, iar datele colectate sunt anonime, putând fi dezactivate
+oricând. Aceste informații nu sunt asociate cu contul personal și nu pot fi utilizate
+pentru a identifica o persoană. De asemenea, evităm colectarea datelor sensibile precum
+vârsta, etnia, religia, orientarea politică sau locația. Alegem cu atenție partenerii
+terți, pentru a garanta că respectăm confidențialitatea utilizatorilor în totalitate.
 
-## Eficienta
-Dovedit urmeaza religios aspectul de eficienta. Prin design, arhitectura, procese si continut, Dovedit are grija sa existe
-eficienta mereu. Platforma nu adauga chestii care nu sunt necesare sau care nu ajuta semnificativ utilizatorul. Simplitatea
-este o prioritate in aceasta eficienta pentru a te a ajuta pe tine, utilizatorul, sa gasesti informatia de care ai nevoie
-cat mai repede posibil. Aceasta eficienta exista si in articole, Dovedit avand reguli stricte in jurul a ce se include in continut.
+### Eficiență
+Eficiența este un principiu central al platformei. Prin design, arhitectură, procese
+și conținut, ne asigurăm că fiecare element al Dovedit servește utilizatorul în cel mai
+rapid și simplu mod posibil. Ne concentrăm pe eliminarea oricăror elemente care nu sunt
+esențiale sau utile, promovând simplitatea și claritatea. Inclusiv articolele publicate
+respectă reguli stricte pentru a oferi informații relevante, concise și la obiect.
 
-## Accesibilitate
-Toata lumea are acces la informatie, indiferent de obstacole. Incercam sa facem platforma cat mai accesibila posibil pentru
-a fi folosita pe orice dispozitiv, orice calitate de internet si orice preferinte. Aceasta accesibilitate persista si prin
-filozofii si design. Nu realizam o platforma de informatii doar pentru tineret, realizam o platforma de informatii pentru intregul popor roman.
+### Accesibilitate
+Accesul la informație este un drept universal. Dovedit își propune să fie
+accesibilă pentru toată lumea, indiferent de dispozitiv, calitatea conexiunii la
+internet sau preferințele utilizatorului. Această accesibilitate este integrată
+în filozofia și designul platformei. Scopul nostru este să creăm o platformă
+pentru întreaga comunitate românească, nu doar pentru anumite categorii de
+utilizatori.
 
-## Neutralitate & Dreptate
-Fiecare are dreptul la opinii, iar platforma noastra este construita pe acest drept. Dovedit nu prefera anumite informatii
-si trateaza toate informatiile ca fiind egale. Articolele si stirile au reguli stricte care previn interpretarea,
-titlurile de tip “clickbait” si alte inselaciuni subtile adoptate de catre alte surse de informatii si stiri.
+### Neutralitate și Dreptate
+Dovedit susține dreptul fiecăruia la opinii și tratează toate informațiile cu
+imparțialitate. Platforma noastră aplică reguli stricte pentru a preveni
+interpretările părtinitoare, titlurile de tip „clickbait” și alte practici
+manipulatoare. Prin acest angajament, asigurăm că informațiile publicate sunt
+corecte, echilibrate și accesibile tuturor.
+
+## Comunitate și Contribuții
+Comunitatea este nucleul platformei Dovedit. Ea joacă un rol esențial în
+guvernarea și dezvoltarea platformei. Pentru noi, contribuțiile nu sunt doar de
+natură financiară. Orice tip de implicare este binevenit: contribuții la codul
+sursă, documentare, redactarea articolelor, ghiduri, știri, suport financiar,
+publicitate sau organizarea de activități.
+
+## Sistemul de Guvernare
+Sistemul de guvernare al Dovedit este condus de comunitate și este structurat în două categorii de contribuitori:
+
+* Contributors
+* Core Contributors
+
+### Contributors
+Contributorii sunt persoanele care participă la dezvoltarea Dovedit prin
+contribuții diverse. Aceștia au drept de vot în deciziile propuse de Core
+Contributors și se pot implica în orice aspect al platformei, precum: cod sursă,
+documentare, articole, știri, ghiduri, finanțare, promovare sau alte activități.
+
+### Core Contributors
+Core Contributors sunt acei contribuitori care au avut o implicare semnificativă
+și constantă în dezvoltarea Dovedit. Ei sunt responsabili de luarea deciziilor
+strategice și de menținerea calității platformei. De asemenea, Core Contributors
+organizează și votează asupra aspectelor fundamentale ale platformei, în cadrul
+unui proces dedicat acestui grup.
