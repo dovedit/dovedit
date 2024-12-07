@@ -25,7 +25,7 @@ The license does not allow for use of the code for competitive purposes.
 However, there is a condition. This license is transformed
 into [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) after 2 years from the date
 of each commit published. To see the latest commit of the source code with
-license the license of the Apache License, Version 2.0, use the following command:
+Apache License activated, use the following command:
 
 
 ```bash
