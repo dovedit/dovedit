@@ -4,6 +4,10 @@ import "@fontsource/geist-sans"
 import { Navbar, type NavbarProps } from "@/components/navbar";
 import { mdClassName } from "@/lib/markdown";
 import { cn } from "@/lib/utils";
+import { getImage } from "astro:assets";
+
+const faviconDark = await getImage({ src: import("@/assets/logo-dark.svg"), format: "svg", width: 32, height: 32 });
+const faviconLight = await getImage({ src: import("@/assets/logo-light.svg"), format: "svg", width: 32, height: 32 });
 
 interface Props {
 	title: string;
@@ -19,7 +23,18 @@ const isMarkdown = !!Astro.props.frontmatter;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			media="(prefers-color-scheme: dark)"
+			href={faviconDark.src}
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			media="(prefers-color-scheme: light)"
+			href={faviconLight.src}
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{props.title}</title>
