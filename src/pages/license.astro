@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/base.astro";
+import { Card, CardContent } from "@/components/ui/card";
+import LicenseComponent from "../../LICENSE.md";
+import { mdClassName } from "@/lib/markdown";
+---
+
+<Layout title="Licenta" class="container">
+	<h1 class="text-5xl font-bold">
+		Licenta
+	</h1>
+	<p>
+		Aceasta este licenta oficiala a codului sursa al Dovedit.
+		Aceasta licenta se aplica doar codului sursa al Dovedit, si nu se aplica
+		universal continutului postat de catre utilizatori.
+	</p>
+
+	<Card className="pt-8">
+		<CardContent className={mdClassName}>
+			<LicenseComponent />
+		</CardContent>
+	</Card>
+</Layout>
