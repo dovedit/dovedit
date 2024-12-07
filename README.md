@@ -29,7 +29,6 @@ Apache License activated, use the following command:
 
 
 ```bash
-git clone https://github.com/dovedit/dovedit.git
 git checkout `git rev-list -n 1 --before="2 years ago" master`
 ```
 
