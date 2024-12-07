@@ -29,7 +29,7 @@ Apache License activated, use the following command:
 
 
 ```bash
-git checkout `git rev-list -n 1 --before="2 years ago" master`
+git checkout `git rev-list -n 1 --before="2 years ago" main`
 ```
 
 This license was created to allow the free nature of the source code, and
