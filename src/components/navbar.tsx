@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 import { Logo } from "./logo";
 
 export interface NavbarProps {
@@ -17,15 +16,10 @@ export function Navbar(props: NavbarProps) {
 			className="flex flex-row h-16 p-2 container"
 		>
 			<a href="/">
-				<Button
-					variant="outline"
-					size="icon"
-				>
-					<Logo
-						width={32}
-						height={32}
-					/>
-				</Button>
+				<Logo
+					width={32}
+					height={32}
+				/>
 			</a>
 		</nav>
 	)
