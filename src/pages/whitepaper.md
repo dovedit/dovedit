@@ -21,6 +21,7 @@ care ghidează guvernarea și dezvoltarea sa. Acestea sunt:
 * Dreptate
 * Transparență
 
+### Transparență
 Dovedit promite o transparență excepțională în toate aspectele: de la codul sursă și
 comunitate, la documentație, finanțe, articole și procese. Transparența este piatra de
 temelie pentru a câștiga încrederea utilizatorilor și a asigura responsabilitatea în
