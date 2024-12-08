@@ -3,6 +3,8 @@
 This is the source code of [Dovedit](https://dovedit.ro).
 This code is licensed under [Functional Source License, Version 1.1, ALv2 Future License](LICENSE.md).
 
+You can follow our [Roadmap on GitHub Projects](https://github.com/orgs/dovedit/projects/2).
+
 ## Why is this in English?
 
 Dovedit is a project that is made specifically for Romania. But
