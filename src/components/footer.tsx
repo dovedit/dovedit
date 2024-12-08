@@ -1,3 +1,4 @@
+import { CarbonBadges } from "./carbon-badges";
 import { Logo } from "./logo";
 
 export interface FooterProps {
@@ -12,21 +13,24 @@ export function Footer(props: FooterProps) {
 	if (hide) return null;
 
 	return (
-		<footer className="bg-background border-t w-full p-16">
+		<footer className="bg-background border-t w-full py-16">
 			<div className="container flex flex-col md:flex-row gap-y-8 gap-x-16">
-				<div className="flex flex-row gap-4">
-					<Logo
-						width={32}
-						height={32}
-					/>
-					<div>
-						<p>
-							Dovedit
-						</p>
-						<a href="/licenta">
-							FSL, Version 1.1, ALv2 Future License
-						</a>
+				<div className="flex flex-col gap-2">
+					<div className="flex flex-row gap-4">
+						<Logo
+							width={32}
+							height={32}
+						/>
+						<div>
+							<p>
+								Dovedit
+							</p>
+							<a href="/licenta">
+								FSL, Version 1.1, ALv2 Future License
+							</a>
+						</div>
 					</div>
+					<CarbonBadges/>
 				</div>
 
 				<div className="flex flex-col">
