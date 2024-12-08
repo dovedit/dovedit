@@ -16,7 +16,7 @@ export function Footer(props: FooterProps) {
 		<footer className="bg-background border-t w-full py-16">
 			<div className="container flex flex-col md:flex-row gap-y-8 gap-x-16">
 				<div className="flex flex-col gap-2">
-					<div className="flex flex-row gap-4">
+					<div className="flex flex-row items-center gap-4">
 						<Logo
 							width={32}
 							height={32}
