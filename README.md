@@ -17,7 +17,7 @@ people.
 The license of this code is licensed under [Functional Source License, Version 1.1, ALv2 Future License](LICENSE.md)
 or FSL-1.1-ALv2. This is a license that works different from the traditional licenses.
 
-This is license is anti-competition, which allows to use ths source code for:
+This is license is anti-competition, which allows to use this source code for:
 * internal purposes;
 * non-commercial education;
 * non-commercial research;
