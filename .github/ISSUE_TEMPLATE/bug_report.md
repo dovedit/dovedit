@@ -4,6 +4,15 @@ about: Create a report to help us improve
 title: ''
 labels: bug
 assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: "Description..."
+  - type: input
+    attributes:
+      label: "Device"
+    validations:
+      required: true
 
 ---
 
