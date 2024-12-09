@@ -1,8 +1,35 @@
 ---
 import { Badge } from "@/components/ui/badge";
-import { Card, CardTitle, CardHeader, CardContent }  from "@/components/ui/card";
+import { Card, CardTitle, CardHeader }  from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Layout from "@/layouts/base.astro";
+import { ExternalLinkIcon } from "lucide-react";
+
+const data = {
+	title: "Prototip Articol",
+	createdAt: new Date().toLocaleDateString("ro-RO", {
+		day: "numeric",
+		month: "long",
+		year: "numeric",
+	}),
+	tags: ["tech", "news"],
+	ai_generated: true,
+	summary: [
+		{
+			emoji: "📝",
+			text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+		},
+		{
+			emoji: "🫀",
+			text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+		},
+		{
+			emoji: "🛠️",
+			text: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+		}
+	],
+	sources: ["https://digi24.ro", "https://protv.ro", "https://adevarul.ro"]
+}
 ---
 
 <Layout
@@ -12,22 +39,36 @@ import Layout from "@/layouts/base.astro";
 	<h1
 		class="text-5xl md:text-7xl font-bold"
 	>
-		Prototip Articol
+		{data.title}
 	</h1>
-	<p>
-		5 min &middot; 20 iunie 2024
-	</p>
 
-	<div>
-		<Badge variant="secondary">
-			#tech
-		</Badge>
-		<Badge variant="secondary">
-			#tech
-		</Badge>
-		<Badge variant="secondary">
-			#tech
-		</Badge>
+	<div class="flex flex-row gap-2 mb-2">
+		{data.ai_generated && (
+			<>
+				<Badge variant="secondary">
+					Generat de AI
+				</Badge>
+				<span>&middot;</span>
+			</>
+		)}
+		{data.tags.map((tag) => (
+			<p>
+				#{tag}
+			</p>
+		))}
+	</div>
+
+	<div class="flex flex-col gap-4 mb-8">
+		{data.summary.map((item) => (
+			<div class="flex flex-row gap-2">
+				<p class="font-bold text-xl">
+					{item.emoji}
+				</p>
+				<p>
+					{item.text}
+				</p>
+			</div>
+		))}
 	</div>
 
 	<Card>
@@ -36,12 +77,16 @@ import Layout from "@/layouts/base.astro";
 				Surse
 			</CardTitle>
 		</CardHeader>
-		<CardContent>
-			<p>hotnews.ro</p>
-			<Separator/>
-			<p>protv.ro</p>
-			<Separator/>
-			<p>digi24.ro</p>
-		</CardContent>
+		<div class="flex flex-col">
+			{data.sources.map((source, idx) => (
+				<>
+					<a href={source} class="block py-4 px-8 hover:bg-muted transition-colors" target="_blank">
+						{new URL(source).hostname}
+						<ExternalLinkIcon className="inline" />
+					</a>
+					{idx !== data.sources.length - 1 && <Separator className="mx-8 w-auto" />}
+				</>
+			))}
+		</div>
 	</Card>
 </Layout>
