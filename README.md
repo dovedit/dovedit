@@ -12,7 +12,7 @@ English is used for contributions, and the code is written in English.
 This is done to make the code more accessible even to non-Romanian
 people.
 
-## How deos the license work?
+## How does the license work?
 
 The license of this code is licensed under [Functional Source License, Version 1.1, ALv2 Future License](LICENSE.md)
 or FSL-1.1-ALv2. This is a license that works different from the traditional licenses.
