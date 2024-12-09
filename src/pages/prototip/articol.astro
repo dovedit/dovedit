@@ -1,0 +1,47 @@
+---
+import { Badge } from "@/components/ui/badge";
+import { Card, CardTitle, CardHeader, CardContent }  from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import Layout from "@/layouts/base.astro";
+---
+
+<Layout
+	title="Prototip Articol"
+	class="container"
+>
+	<h1
+		class="text-5xl md:text-7xl font-bold"
+	>
+		Prototip Articol
+	</h1>
+	<p>
+		5 min &middot; 20 iunie 2024
+	</p>
+
+	<div>
+		<Badge variant="secondary">
+			#tech
+		</Badge>
+		<Badge variant="secondary">
+			#tech
+		</Badge>
+		<Badge variant="secondary">
+			#tech
+		</Badge>
+	</div>
+
+	<Card>
+		<CardHeader>
+			<CardTitle>
+				Surse
+			</CardTitle>
+		</CardHeader>
+		<CardContent>
+			<p>hotnews.ro</p>
+			<Separator/>
+			<p>protv.ro</p>
+			<Separator/>
+			<p>digi24.ro</p>
+		</CardContent>
+	</Card>
+</Layout>
