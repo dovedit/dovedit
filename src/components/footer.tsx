@@ -47,7 +47,6 @@ export function Footer(props: FooterProps) {
 
 				<div className="flex flex-col">
 					<h2 className="text-muted-foreground">DESPRE</h2>
-					<a href="/whitepaper">Whitepaper</a>
 					<a href="https://github.com/orgs/dovedit/projects/2" target="_blank">Roadmap</a>
 				</div>
 			</div>

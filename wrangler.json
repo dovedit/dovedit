@@ -1,0 +1,18 @@
+{
+	"name": "dovedit",
+	"compatibility_date": "2024-12-13",
+	"build": {
+		"command": "npm run build"
+	},
+	"routes": [
+		{
+			"pattern": "dovedit.com",
+			"custom_domain": true
+		}
+	],
+	"d1_databases": [{
+		"binding": "DB",
+		"database_name": "dovedit-prod",
+		"database_id": "4a4703aa-c0ee-4898-abae-4121414467a1"
+	}]
+}
