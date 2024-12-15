@@ -12,7 +12,8 @@
 	],
 	"d1_databases": [{
 		"binding": "DB",
-		"database_name": "dovedit-prod",
-		"database_id": "4a4703aa-c0ee-4898-abae-4121414467a1"
+		"database_name": "dovedit-db",
+		"database_id": "4a4703aa-c0ee-4898-abae-4121414467a1",
+		"migrations_dir": "./drizzle"
 	}]
 }
