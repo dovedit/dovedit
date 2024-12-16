@@ -12,6 +12,32 @@ English is used for contributions, and the code is written in English.
 This is done to make the code more accessible even to non-Romanian
 people.
 
+## Development
+
+First you will need to setup the environment. You will need to install the dependencies:
+
+```bash
+npm install
+```
+
+Then you will need to setup the database. This command will setup the local database and seed it with some data:
+
+```bash
+npm run db:dev
+```
+
+You can now run the development server:
+
+```bash
+npm run dev
+```
+
+You can also preview the local database using the following command:
+
+```bash
+npm run db:studio
+```
+
 ## How does the license work?
 
 The license of this code is licensed under [Functional Source License, Version 1.1, ALv2 Future License](LICENSE.md)
