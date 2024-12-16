@@ -9,6 +9,7 @@
     "db:migrate": "drizzle-kit generate && wrangler d1 migrations apply dovedit-db --local",
     "db:migrate:remote": "drizzle-kit generate && wrangler d1 migrations apply dovedit-db --remote",
     "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx ./src/lib/db/seed.ts",
     "bindings:typegen": "wrangler types",
     "astro": "astro",
     "wrangler": "wrangler"
@@ -34,9 +35,11 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-kit": "^0.30.1",
+    "drizzle-seed": "^0.1.3",
     "tailwind-merge": "^2.5.5",
     "tailwindcss": "^3.4.16",
     "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
