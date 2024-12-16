@@ -1,5 +1,5 @@
 import { drizzle } from "drizzle-orm/better-sqlite3";
-import { getLocalD1DB } from "drizzle.config";
+import { getLocalD1DB } from "drizzle-dev.config.ts";
 import { seed, reset } from "drizzle-seed";
 import * as schema from "./schema";
 
