@@ -1,0 +1,68 @@
+---
+import Layout from "@/layouts/base.astro";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { FileTextIcon, HeartIcon, InfoIcon } from "lucide-react";
+---
+
+<Layout
+	title="Citeste"
+	navbarProps={{
+		hide: true
+	}}
+	footerProps={{
+		hide: true
+	}}
+	class="container"
+>
+	<div class="space-y-2 mt-32">
+		<h1 class="text-5xl md:text-7xl font-bold">
+			Citește
+		</h1>
+		<p>
+			Introdu un link pentru a-l citi într-un format pentru oameni.
+		</p>
+		<form
+			class="flex flex-col gap-2"
+		>
+			<Input
+				type="url"
+				placeholder="Link"
+				required
+				autoFocus
+				autoCorrect="off"
+				autoComplete="off"
+			/>
+			<Button
+				className="w-full"
+				type="submit"
+			>
+				<FileTextIcon/>
+				Citește
+			</Button>
+		</form>
+	</div>
+
+	<Card className="mt-8">
+		<CardHeader>
+			<CardTitle>Access ușor</CardTitle>
+			<CardDescription>
+				Instalează această aplicație pe dispozitivul tău pentru a citi
+				articolele de știri mai ușor.
+			</CardDescription>
+		</CardHeader>
+		<CardContent>
+			<Button className="w-full">
+				<InfoIcon/>
+				Află cum
+			</Button>
+		</CardContent>
+	</Card>
+
+	<a href="https://dovedit.ro" target="_blank" class="text-center block mt-4 text-muted-foreground no-underline">
+		Făcut cu
+		<HeartIcon className="inline h-4 w-4"/>
+		by <span class="font-bold underline">Dovedit</span>
+	</a>
+</Layout>
