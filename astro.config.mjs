@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 
-// import cloudflare from '@astrojs/cloudflare';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,5 +15,12 @@ export default defineConfig({
 	integrations: [react(), tailwind({
 		applyBaseStyles: false
 	})],
-	// adapter: cloudflare()
+	adapter: cloudflare({
+		cloudflareModules: false,
+		platformProxy: {
+			enabled: true,
+			configPath: "./wrangler.json",
+			persist: true,
+		},
+	})
 });
