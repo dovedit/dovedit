@@ -15,3 +15,14 @@ export const articles = sqliteTable("articles", {
 
 export type SelectArticle = typeof articles.$inferSelect;
 export type InsertArticle = typeof articles.$inferInsert;
+
+export const readerArticles = sqliteTable("reader_articles", {
+	id: int().primaryKey({ autoIncrement: true }),
+	title: text().notNull(),
+	htmlContent: text().notNull(),
+	publishedAt: int({ mode: "timestamp" }).notNull(),
+	source: text().notNull(),
+}, () => [])
+
+export type SelectReaderArticle = typeof readerArticles.$inferSelect;
+export type InsertReaderArticle = typeof readerArticles.$inferInsert;

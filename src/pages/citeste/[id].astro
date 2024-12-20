@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/base.astro";
+import { Article } from "@/components/article";
+import { readerArticles } from "@/lib/db/schema";
+import { eq } from "drizzle-orm";
+
+export const prerender = false;
+
+const id = Astro.params.id;
+const db = Astro.locals.db;
+
+if (!id) {
+	return Astro.redirect("/citeste");
+}
+
+const [article] = await db.select().from(readerArticles).where(eq(readerArticles.id, parseInt(id)));
+
+if (!article) {
+	return Astro.redirect("/citeste");
+}
+---
+
+<Layout
+	title="Citește"
+	navbarProps={{
+		hide: true
+	}}
+	footerProps={{
+		hide: true
+	}}
+	class="mt-8"
+>
+	<Article
+		title={article.title}
+		htmlContent={article?.htmlContent}
+		publishedAtTimestamp={new Date(article.publishedAt).getTime()}
+		sources={[article.source]}
+	/>
+</Layout>

@@ -4,6 +4,18 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { FileTextIcon, HeartIcon, InfoIcon } from "lucide-react";
+import { actions } from "astro:actions";
+
+const result = Astro.getActionResult(actions.reader.getArticle);
+
+export const prerender = false;
+
+if (result && !result.error) {
+	// Encode the result as json
+	return Astro.redirect(`/citeste/${result.data.id}`);
+} else if (result && result.error) {
+	console.log(result.error);
+}
 ---
 
 <Layout
@@ -25,8 +37,11 @@ import { FileTextIcon, HeartIcon, InfoIcon } from "lucide-react";
 		</p>
 		<form
 			class="flex flex-col gap-2"
+			method="POST"
+			action={actions.reader.getArticle}
 		>
 			<Input
+				name="url"
 				type="url"
 				placeholder="Link"
 				required
@@ -63,6 +78,6 @@ import { FileTextIcon, HeartIcon, InfoIcon } from "lucide-react";
 	<a href="https://dovedit.ro" target="_blank" class="text-center block mt-4 text-muted-foreground no-underline">
 		Făcut cu
 		<HeartIcon className="inline h-4 w-4"/>
-		by <span class="font-bold underline">Dovedit</span>
+		de <span class="font-bold underline">Dovedit</span>
 	</a>
 </Layout>

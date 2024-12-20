@@ -20,12 +20,12 @@ export function Article(props: ArticleProps) {
 			month: "short",
 			day: "numeric",
 			timeZone: "Europe/Bucharest",
-		}) : ""
+		}) : "";
 
 	return (
 		<article className="container">
 			<h1
-				className="text-5xl md:text-7xl font-bold"
+				className="text-5xl font-bold"
 			>
 				{props.title}
 			</h1>
@@ -76,7 +76,7 @@ export function Article(props: ArticleProps) {
 									target="_blank"
 									className="block pb-5 pt-4"
 								>
-									{new URL(source).hostname}
+									{new URL(source).hostname.replace("www.", "")}
 								</a>
 								{list.length-1 !== idx ?
 									<Separator/>
